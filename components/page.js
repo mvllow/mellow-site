@@ -1,7 +1,12 @@
 import React from "react";
+import Head from "next/head";
 
 const Page = ({ children }) => (
   <>
+    <Head>
+      <title>mvllow</title>
+    </Head>
+
     <main>{children}</main>
 
     <style jsx>{`
