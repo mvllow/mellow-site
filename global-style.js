@@ -1,7 +1,6 @@
 import { css, createGlobalStyle } from "styled-components";
 
-// `createGlobalStyle` is enough, however adding `css` allows for prettier to format properly
-export const GlobalStyle = createGlobalStyle(css`
+const cachedGlobalStyle = css`
   @import url("https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap");
 
   *,
@@ -16,7 +15,6 @@ export const GlobalStyle = createGlobalStyle(css`
 
   body {
     color: white;
-    background: black;
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
@@ -29,4 +27,6 @@ export const GlobalStyle = createGlobalStyle(css`
   h3 {
     margin: 0;
   }
-`);
+`;
+
+export const GlobalStyle = createGlobalStyle(cachedGlobalStyle);
