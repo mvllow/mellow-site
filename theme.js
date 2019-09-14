@@ -1,4 +1,4 @@
 module.exports = {
-  black: "#000",
-  white: "#fff"
+	black: '#000',
+	white: '#fff'
 };
