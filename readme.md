@@ -1,1 +1,1 @@
-stay humble, stay hopeful - lokai
+please love all
