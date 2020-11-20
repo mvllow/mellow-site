@@ -1,3 +1,5 @@
+import type { AppProps } from 'next/app'
+
 import Head from 'next/head'
 import { ThemeProvider } from 'next-themes'
 import '../global.css'
@@ -10,7 +12,7 @@ const Meta = () => (
   </Head>
 )
 
-const MyApp = ({ Component, pageProps }) => (
+const MyApp = ({ Component, pageProps }: AppProps) => (
   <ThemeProvider
     attribute='class'
     defaultTheme='system'

@@ -1,6 +1,11 @@
 import Link from 'next/link'
 
-const Item = ({ children, href }) => {
+type Props = {
+  href: string
+  children: React.ReactNode
+}
+
+const Item = ({ href, children }: Props) => {
   let isExternal = href.startsWith('http')
   let classes =
     'text-gray-600 dark:text-gray-200 text-sm hover:text-black dark:hover:text-white'
