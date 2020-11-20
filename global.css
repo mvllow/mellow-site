@@ -1,0 +1,9 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen antialiased text-gray-600 dark:text-gray-200 bg-white dark:bg-black;
+}

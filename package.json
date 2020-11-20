@@ -1,34 +1,24 @@
 {
-  "name": "mvllow",
+  "name": "mellow",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "yarn build && next export && cp ./now.json ./out",
-    "deploy": "yarn export && now ./out"
-  },
-  "xo": {
-    "prettier": true,
-    "extends": "xo-react"
+    "build": "next build"
   },
   "prettier": {
-    "bracketSpacing": true
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true
   },
   "dependencies": {
-    "next": "9.3.2",
-    "prop-types": "^15.7.2",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
-    "react-feather": "^2.0.3",
-    "styled-components": "^5.0.0-beta.8"
+    "next": "^10.0.2",
+    "next-themes": "^0.0.10",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.6",
-    "eslint-config-xo-react": "^0.20.0",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^2.0.1",
-    "xo": "^0.24.0"
+    "autoprefixer": "^10.0.2",
+    "tailwindcss": "^2.0.1"
   }
 }
