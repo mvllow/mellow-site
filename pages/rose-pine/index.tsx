@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Header from '../../components/header'
-import Section from '../../components/section'
-import Item from '../../components/item'
+import Header from '@/components/header'
+import Section from '@/components/section'
+import Item from '@/components/item'
 
 let colors = [
   { name: 'base', color: '#191724' },

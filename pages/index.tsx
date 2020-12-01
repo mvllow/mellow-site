@@ -1,6 +1,6 @@
-import Header from '../components/header'
-import Section from '../components/section'
-import Item from '../components/item'
+import Header from '@/components/header'
+import Section from '@/components/section'
+import Item from '@/components/item'
 
 const Index = () => (
   <>
