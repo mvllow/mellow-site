@@ -1,7 +1,7 @@
 {
   "name": "mellow",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build"
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "^14.14.9",
-    "@types/react": "^16.14.0",
+    "@types/react": "^17.0.0",
     "autoprefixer": "^10.0.2",
     "tailwindcss": "^2.0.1",
     "typescript": "^4.1.2"
