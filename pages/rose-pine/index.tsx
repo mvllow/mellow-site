@@ -51,10 +51,10 @@ let colorsDawn = [
 const RosePine = () => {
   const [copied, setCopied] = useState('')
 
-  function copyColor(color) {
+  function copyColor(color, prefix = '') {
     try {
       navigator?.clipboard.writeText(color.color || '')
-      setCopied(color.name || null)
+      setCopied(`${prefix}${color.name}` || null)
     } catch (err) {
       // Error copying to clipboard
     }
@@ -93,7 +93,7 @@ const RosePine = () => {
             {colors.map((color) => (
               <button
                 key={color.name}
-                onClick={() => copyColor(color)}
+                onClick={() => copyColor(color, 'main')}
                 className='space-x-2 font-mono flex items-center'
               >
                 <div
@@ -102,7 +102,7 @@ const RosePine = () => {
                 />
                 <span className='text-xs'>{color.color} -</span>
                 <span className='text-xs'>{color.name}</span>
-                {copied == color.name ? (
+                {copied == `main${color.name}` ? (
                   <span className='text-xs text-gray-400 dark:text-gray-600'>
                     (copied)
                   </span>
@@ -117,7 +117,7 @@ const RosePine = () => {
             {colorsMoon.map((color) => (
               <button
                 key={color.name}
-                onClick={() => copyColor(color)}
+                onClick={() => copyColor(color, 'moon')}
                 className='space-x-2 font-mono flex items-center'
               >
                 <div
@@ -126,7 +126,7 @@ const RosePine = () => {
                 />
                 <span className='text-xs'>{color.color} -</span>
                 <span className='text-xs'>{color.name}</span>
-                {copied == color.name ? (
+                {copied == `moon${color.name}` ? (
                   <span className='text-xs text-gray-400 dark:text-gray-600'>
                     (copied)
                   </span>
@@ -141,7 +141,7 @@ const RosePine = () => {
             {colorsDawn.map((color) => (
               <button
                 key={color.name}
-                onClick={() => copyColor(color)}
+                onClick={() => copyColor(color, 'dawn')}
                 className='space-x-2 font-mono flex items-center'
               >
                 <div
@@ -150,7 +150,7 @@ const RosePine = () => {
                 />
                 <span className='text-xs'>{color.color} -</span>
                 <span className='text-xs'>{color.name}</span>
-                {copied == color.name ? (
+                {copied == `dawn${color.name}` ? (
                   <span className='text-xs text-gray-400 dark:text-gray-600'>
                     (copied)
                   </span>
