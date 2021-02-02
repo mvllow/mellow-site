@@ -6,16 +6,46 @@ import Item from '@/components/item'
 let colors = [
   { name: 'base', color: '#191724' },
   { name: 'surface', color: '#1f1d2e' },
-  { name: 'border', color: '#26233a' },
-  { name: 'shadow', color: '#010101' },
-  { name: 'subtle', color: '#706e86' },
+  { name: 'overlay', color: '#26233a' },
+  { name: 'inactive', color: '#555169' },
+  { name: 'subtle', color: '#6e6a86' },
   { name: 'text', color: '#e0def4' },
+  { name: 'love', color: '#eb6f92' },
+  { name: 'gold', color: '#f6c177' },
   { name: 'rose', color: '#ebbcba' },
   { name: 'pine', color: '#31748f' },
   { name: 'foam', color: '#9ccfd8' },
   { name: 'iris', color: '#c4a7e7' },
+]
+
+let colorsMoon = [
+  { name: 'base', color: '#232136' },
+  { name: 'surface', color: '#2a273f' },
+  { name: 'overlay', color: '#393552' },
+  { name: 'inactive', color: '#59546d' },
+  { name: 'subtle', color: '#817c9c' },
+  { name: 'text', color: '#e0def4' },
   { name: 'love', color: '#eb6f92' },
   { name: 'gold', color: '#f6c177' },
+  { name: 'rose', color: '#ea9a97' },
+  { name: 'pine', color: '#3e8fb0' },
+  { name: 'foam', color: '#9ccfd8' },
+  { name: 'iris', color: '#c4a7e7' },
+]
+
+let colorsDawn = [
+  { name: 'base', color: '#faf4ed' },
+  { name: 'surface', color: '#fffaf3' },
+  { name: 'overlay', color: '#f2e9de' },
+  { name: 'inactive', color: '#9893a5' },
+  { name: 'subtle', color: '#6e6a86' },
+  { name: 'text', color: '#575279' },
+  { name: 'love', color: '#b4637a' },
+  { name: 'gold', color: '#ea9d34' },
+  { name: 'rose', color: '#d7827e' },
+  { name: 'pine', color: '#286983' },
+  { name: 'foam', color: '#56949f' },
+  { name: 'iris', color: '#907aa9' },
 ]
 
 const RosePine = () => {
@@ -58,27 +88,77 @@ const RosePine = () => {
       </Section>
 
       <Section title='Palette'>
-        <div className='flex flex-col space-y-2'>
-          {colors.map((color) => (
-            <button
-              key={color.name}
-              onClick={() => copyColor(color)}
-              className='space-x-2 font-mono flex items-center'
-            >
-              <div
-                className='w-6 h-6 rounded-full'
-                style={{ backgroundColor: color.color }}
-              />
-              <span className='text-xs'>{color.color} -</span>
-              <span className='text-xs'>{color.name}</span>
-              {copied == color.name ? (
-                <span className='text-xs text-gray-400 dark:text-gray-600'>
-                  (copied)
-                </span>
-              ) : null}
-            </button>
-          ))}
-        </div>
+        <Section title='Rosé Pine'>
+          <div className='flex flex-col space-y-2'>
+            {colors.map((color) => (
+              <button
+                key={color.name}
+                onClick={() => copyColor(color)}
+                className='space-x-2 font-mono flex items-center'
+              >
+                <div
+                  className='w-6 h-6 rounded-full'
+                  style={{ backgroundColor: color.color }}
+                />
+                <span className='text-xs'>{color.color} -</span>
+                <span className='text-xs'>{color.name}</span>
+                {copied == color.name ? (
+                  <span className='text-xs text-gray-400 dark:text-gray-600'>
+                    (copied)
+                  </span>
+                ) : null}
+              </button>
+            ))}
+          </div>
+        </Section>
+
+        <Section title='Rosé Pine Moon'>
+          <div className='flex flex-col space-y-2'>
+            {colorsMoon.map((color) => (
+              <button
+                key={color.name}
+                onClick={() => copyColor(color)}
+                className='space-x-2 font-mono flex items-center'
+              >
+                <div
+                  className='w-6 h-6 rounded-full'
+                  style={{ backgroundColor: color.color }}
+                />
+                <span className='text-xs'>{color.color} -</span>
+                <span className='text-xs'>{color.name}</span>
+                {copied == color.name ? (
+                  <span className='text-xs text-gray-400 dark:text-gray-600'>
+                    (copied)
+                  </span>
+                ) : null}
+              </button>
+            ))}
+          </div>
+        </Section>
+
+        <Section title='Rosé Pine Dawn'>
+          <div className='flex flex-col space-y-2'>
+            {colorsDawn.map((color) => (
+              <button
+                key={color.name}
+                onClick={() => copyColor(color)}
+                className='space-x-2 font-mono flex items-center'
+              >
+                <div
+                  className='w-6 h-6 rounded-full'
+                  style={{ backgroundColor: color.color }}
+                />
+                <span className='text-xs'>{color.color} -</span>
+                <span className='text-xs'>{color.name}</span>
+                {copied == color.name ? (
+                  <span className='text-xs text-gray-400 dark:text-gray-600'>
+                    (copied)
+                  </span>
+                ) : null}
+              </button>
+            ))}
+          </div>
+        </Section>
       </Section>
     </>
   )
