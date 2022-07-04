@@ -1,15 +1,12 @@
 {
 	"name": "mellow",
-	"version": "0.0.1",
+	"private": true,
+	"type": "module",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
-		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
 		"prepare": "svelte-kit sync",
-		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --check --plugin-search-dir=. .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
@@ -22,6 +19,5 @@
 		"svelte-preprocess": "^4.10.6",
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.2"
-	},
-	"type": "module"
+	}
 }
