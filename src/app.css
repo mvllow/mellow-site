@@ -60,7 +60,8 @@ body {
 	main ul {
 		@apply leading-relaxed;
 	}
-	main section {
+	main section,
+	main article {
 		@apply space-y-6;
 	}
 }

@@ -12,7 +12,9 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
+		"@types/marked": "^4.0.3",
 		"autoprefixer": "^10.4.7",
+		"marked": "^4.0.17",
 		"postcss": "^8.4.14",
 		"prettier": "^2.6.2",
 		"prettier-plugin-tailwindcss": "^0.1.11",
