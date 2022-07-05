@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--page-top: 64px;
+	--page-gutter: 24px;
+	--header-height: 48px;
+	--footer-height: 96px;
+	--content-width: 40rem;
+	--content-height: calc(100vh - (var(--page-top) * 2) - var(--footer-height));
+
+	@media (min-width: 640px) {
+		--page-top: 192px;
+		--page-gutter: 48px;
+		--footer-height: 48px;
+	}
+
+	--b-low-a: hsl(32deg 57% 95% / 0.8);
+	--b-low: hsl(32deg 57% 95%);
+	--b-med: hsl(32deg 57% 92%);
+	--f-med: hsl(206deg 23% 31%);
+	--f-high: hsl(206deg 23% 3%);
+
+	@media (prefers-color-scheme: dark) {
+		--b-low-a: hsl(0deg 0% 10% / 0.9);
+		--b-low: hsl(0deg 0% 10%);
+		--b-med: hsl(0deg 0% 13%);
+		--f-med: hsl(60deg 5% 66%);
+		--f-high: hsl(60deg 5% 94%);
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+
+	@media (prefers-reduced-motion: reduce) {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+	color: var(--f-high);
+	background: var(--b-low);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+	main h1 {
+		@apply text-xl font-semibold tracking-tight sm:text-3xl;
+	}
+	main h2 {
+		@apply text-lg font-semibold tracking-tight sm:text-2xl;
+	}
+	main h3 {
+		@apply pt-1 text-f-med;
+	}
+	main p,
+	main ul {
+		@apply leading-relaxed;
+	}
+	main section {
+		@apply space-y-6;
+	}
+}
