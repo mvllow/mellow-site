@@ -3,9 +3,11 @@
 
 	export const load: Load = async ({ fetch }) => {
 		const response = await fetch(`/writing.json`);
+		const crumbs = [{ text: 'Writing', href: '/writing' }];
 
 		return {
 			props: { posts: response.ok && (await response.json()) },
+			stuff: { crumbs },
 		};
 	};
 </script>

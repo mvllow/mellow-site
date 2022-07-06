@@ -1,4 +1,5 @@
 <script>
+	import Breadcrumbs from '$lib/breadcrumbs.svelte';
 	import '../app.css';
 </script>
 
@@ -12,14 +13,14 @@
 		class="fixed top-0 left-0 z-[var(--layer)] flex h-header-height w-full items-center border-b px-page-gutter before:absolute before:inset-0 before:z-[-1] before:bg-b-low-a before:backdrop-blur-md"
 	>
 		<nav class="mx-auto flex w-full max-w-content items-center">
-			<a href="/" class="font-serif italic">mellow</a>
+			<Breadcrumbs />
 		</nav>
 	</div>
 </header>
 
 <main class="flex justify-center px-page-gutter py-page-top">
 	<div class="min-h-content w-full max-w-content space-y-10 sm:space-y-20">
-		<a href="/" class="font-serif italic">mellow</a>
+		<Breadcrumbs />
 
 		<slot />
 	</div>

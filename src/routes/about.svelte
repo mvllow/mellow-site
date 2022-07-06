@@ -1,3 +1,15 @@
+<script context="module" lang="ts">
+	import type { Load } from './__types';
+
+	export const load: Load = async () => {
+		const crumbs = [{ text: 'About', href: '/about' }];
+
+		return {
+			stuff: { crumbs },
+		};
+	};
+</script>
+
 <script>
 	import Link from '$lib/link.svelte';
 </script>

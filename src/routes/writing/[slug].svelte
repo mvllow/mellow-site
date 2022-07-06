@@ -4,9 +4,14 @@
 	export const load: Load = async ({ fetch, params }) => {
 		const response = await fetch(`${params.slug}.json`);
 		const post = await response.json();
+		const crumbs = [
+			{ text: 'Writing', href: '/writing' },
+			{ text: post.metadata.title, href: post.metadata.slug },
+		];
 
 		return {
 			props: { post },
+			stuff: { crumbs },
 		};
 	};
 </script>
