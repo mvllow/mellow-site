@@ -59,6 +59,10 @@
 
 <style lang="postcss" global>
 	.content {
+		& [id] {
+			@apply scroll-mt-header-height;
+		}
+
 		& h1 {
 			@apply text-xl font-semibold tracking-tight sm:text-2xl;
 		}
@@ -94,6 +98,10 @@
 
 		& blockquote {
 			@apply border-l-2 border-f-med pl-3 leading-tight text-f-med;
+		}
+
+		& ol {
+			@apply list-decimal pl-[18px] leading-relaxed;
 		}
 
 		& ul {

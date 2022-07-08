@@ -54,7 +54,13 @@ body {
 		@apply text-lg font-semibold tracking-tight sm:text-2xl;
 	}
 	main h3 {
-		@apply pt-1 text-f-med;
+		@apply font-semibold tracking-tight sm:text-lg;
+	}
+	main h4 {
+		@apply font-serif font-semibold italic;
+	}
+	main strong {
+		@apply font-medium;
 	}
 	main p,
 	main ul {
