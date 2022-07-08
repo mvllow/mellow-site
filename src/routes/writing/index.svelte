@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-	<title>writing ~ mellow</title>
+	<title>Writing</title>
 	<meta name="description" content="A garden of discovery and creation." />
 </svelte:head>
 

@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>about ~ mellow</title>
+	<title>About</title>
 	<meta name="description" content="Question everything." />
 </svelte:head>
 
