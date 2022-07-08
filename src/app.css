@@ -23,10 +23,10 @@
 	--f-high: hsl(206deg 23% 3%);
 
 	@media (prefers-color-scheme: dark) {
-		--b-low-a: hsl(0deg 0% 10% / 0.9);
-		--b-low: hsl(0deg 0% 10%);
-		--b-med: hsl(0deg 0% 13%);
-		--f-med: hsl(60deg 5% 66%);
+		--b-low-a: hsl(333deg 5% 9% / 0.9);
+		--b-low: hsl(333deg 5% 9%);
+		--b-med: hsl(333deg 5% 14%);
+		--f-med: hsl(60deg 5% 62%);
 		--f-high: hsl(60deg 5% 94%);
 	}
 }
@@ -47,27 +47,72 @@ body {
 }
 
 @layer base {
-	main h1 {
-		@apply text-xl font-semibold tracking-tight sm:text-3xl;
+	[id] {
+		@apply scroll-mt-header-height;
 	}
-	main h2 {
-		@apply text-lg font-semibold tracking-tight sm:text-2xl;
-	}
-	main h3 {
-		@apply font-semibold tracking-tight sm:text-lg;
-	}
-	main h4 {
-		@apply font-serif font-semibold italic;
-	}
-	main strong {
-		@apply font-medium;
-	}
-	main p,
-	main ul {
+
+	p {
 		@apply leading-relaxed;
 	}
-	main section,
-	main article {
-		@apply space-y-6;
+
+	em {
+		@apply font-serif;
+	}
+
+	strong {
+		@apply font-semibold;
+	}
+
+	ul,
+	ol {
+		@apply space-y-1 leading-relaxed;
+	}
+
+	nav ul,
+	nav ol {
+		@apply space-y-0;
+	}
+
+	section {
+		@apply space-y-7;
+	}
+}
+
+@layer components {
+	.title {
+		@apply text-lg font-semibold tracking-tight sm:text-3xl;
+	}
+
+	.headline {
+		@apply text-base font-semibold tracking-tight sm:text-lg;
+	}
+
+	.link:before,
+	.link:after {
+		color: var(--f-med);
+	}
+
+	.link:before {
+		content: '{';
+	}
+
+	.link:after {
+		content: '}';
+	}
+
+	.link[target='_blank']:before {
+		content: '[';
+	}
+
+	.link[target='_blank']:after {
+		content: ']';
+	}
+
+	.link:hover {
+		@apply underline decoration-f-med underline-offset-2;
+	}
+
+	.link:visited {
+		@apply text-f-med;
 	}
 }

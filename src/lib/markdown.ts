@@ -35,7 +35,7 @@ function linkRenderer(href: string, title: string, text: string) {
 	const targetAttr = href.startsWith('http') ? ' target="_blank"' : '';
 	const titleAttr = title !== null ? ` title="${title}"` : '';
 
-	return `<a href="${href}"${targetAttr}${titleAttr} rel="noopener noreferrer">${text}</a>`;
+	return `<a href="${href}"${targetAttr}${titleAttr} rel="noopener noreferrer" class="link">${text}</a>`;
 }
 
 export function parseMarkdown(filename: string) {

@@ -30,12 +30,14 @@
 </svelte:head>
 
 <section>
-	<h1>Writing</h1>
+	<h1 class="headline">Writing</h1>
 
-	<ol class="leading-loose">
+	<ol>
 		{#each sortedPosts as post}
 			<li>
-				<span class="text-sm text-f-med">{post.metadata.date}&nbsp;</span>
+				<span class="text-sm tabular-nums text-f-med"
+					>{post.metadata.date}&nbsp;</span
+				>
 				<Link href="/writing/{post.metadata.slug}">{post.metadata.title}</Link>
 			</li>
 		{/each}

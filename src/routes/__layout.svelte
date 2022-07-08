@@ -32,7 +32,7 @@
 	<div
 		class="flex w-full max-w-content flex-col-reverse items-center justify-between gap-3 sm:flex-row sm:gap-0"
 	>
-		<p class="font-serif text-sm text-f-med">
+		<p class="text-sm text-f-med">
 			<em>Per favore ama tutti.</em>
 		</p>
 

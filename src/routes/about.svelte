@@ -20,7 +20,7 @@
 </svelte:head>
 
 <section>
-	<h1>About</h1>
+	<h1 class="headline">About</h1>
 
 	<p>
 		Practicing minimalism and slower, intentional living. Learning Italian to
@@ -36,6 +36,7 @@
 		<li>
 			<Link href="https://eldritch.cafe/web/@not">not@eldritch.cafe</Link>
 		</li>
+
 		<li>
 			<Link href="https://github.com/mvllow">github.com/mvllow</Link>
 		</li>

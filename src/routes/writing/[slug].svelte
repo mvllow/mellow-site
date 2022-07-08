@@ -28,15 +28,13 @@
 	<meta name="description" content={post.metadata.description} />
 </svelte:head>
 
-<h1 class="sr-only">Writing</h1>
+<article lang={post.metadata.locale}>
+	<header class="space-y-1">
+		<h1 class="headline">{post.metadata.title}</h1>
+		<p>{post.metadata.description}</p>
+	</header>
 
-<article>
-	<h2>{post.metadata.title}</h2>
-	<p>{post.metadata.description}</p>
-
-	<div class="content">
-		{@html post.content}
-	</div>
+	{@html post.content}
 </article>
 
 <hr />
@@ -57,81 +55,36 @@
 	>
 </div>
 
-<style lang="postcss" global>
-	.content {
-		& [id] {
-			@apply scroll-mt-header-height;
-		}
+<style lang="postcss">
+	article :global(> *) {
+		@apply mt-7;
+	}
 
-		& h1 {
-			@apply text-xl font-semibold tracking-tight sm:text-2xl;
-		}
+	article :global(h2),
+	article :global(h3),
+	article :global(h4),
+	article :global(h5),
+	article :global(h6) {
+		@apply mt-14;
+	}
 
-		& > * {
-			@apply mt-[28px];
-		}
+	article :global(h2) {
+		@apply text-base font-semibold tracking-tight sm:text-lg;
+	}
 
-		& h1,
-		& h2,
-		& h3,
-		& h4,
-		& h5,
-		& h6 {
-			@apply mt-[56px];
-		}
+	article :global(h3) {
+		@apply font-serif text-base font-medium italic;
+	}
 
-		& h2,
-		& h3,
-		& h4,
-		& h5,
-		& h6 {
-			@apply font-medium;
-		}
+	article :global(ul) {
+		@apply list-disc pl-[18px];
+	}
 
-		& > p {
-			@apply leading-relaxed;
-		}
+	article :global(ol) {
+		@apply list-decimal pl-[18px];
+	}
 
-		& em {
-			@apply font-serif;
-		}
-
-		& blockquote {
-			@apply border-l-2 border-f-med pl-3 leading-tight text-f-med;
-		}
-
-		& ol {
-			@apply list-decimal pl-[18px] leading-relaxed;
-		}
-
-		& ul {
-			@apply list-disc pl-[18px] leading-relaxed;
-		}
-
-		& a:before,
-		& a:after {
-			color: var(--f-med);
-		}
-
-		& a:before {
-			content: '{';
-		}
-
-		& a:after {
-			content: '}';
-		}
-
-		& a[target='_blank']:before {
-			content: '[';
-		}
-
-		& a[target='_blank']:after {
-			content: ']';
-		}
-
-		& a:hover {
-			text-decoration: underline;
-			text-decoration-color: var(--f-med);
-		}
+	article :global(blockquote) {
+		@apply border-l-2 border-f-med pl-3 text-f-med;
 	}
 </style>

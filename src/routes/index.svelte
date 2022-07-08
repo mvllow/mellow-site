@@ -8,7 +8,7 @@
 </svelte:head>
 
 <section>
-	<h1>
+	<h1 class="title">
 		Plant based minimalist. Interested in altruism, essentialism,
 		intentionalism, and probably some other "isms".
 	</h1>
@@ -26,7 +26,7 @@
 </section>
 
 <section>
-	<h2>Thoughts &amp; stories</h2>
+	<h2 class="headline">Thoughts &amp; stories</h2>
 
 	<p>
 		Follow my journey through a collection of experiences. I write about my

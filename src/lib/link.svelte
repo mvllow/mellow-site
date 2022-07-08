@@ -7,33 +7,6 @@
 <a
 	{href}
 	rel={isExternal ? 'external' : undefined}
-	target={isExternal ? '_blank' : undefined}><slot /></a
+	target={isExternal ? '_blank' : undefined}
+	class="link"><slot /></a
 >
-
-<style>
-	a:before,
-	a:after {
-		color: var(--f-med);
-	}
-
-	a:before {
-		content: '{';
-	}
-
-	a:after {
-		content: '}';
-	}
-
-	a[target='_blank']:before {
-		content: '[';
-	}
-
-	a[target='_blank']:after {
-		content: ']';
-	}
-
-	a:hover {
-		text-decoration: underline;
-		text-decoration-color: var(--f-med);
-	}
-</style>
