@@ -13,7 +13,7 @@
 			class:font-serif={selected}
 			class:italic={selected}
 		>
-			<a {href}>{text}</a>
+			<a href={selected ? '#' : href}>{text}</a>
 		</li>
 	{/each}
 </ol>
