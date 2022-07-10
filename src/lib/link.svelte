@@ -4,9 +4,4 @@
 	let isExternal = href.startsWith('http');
 </script>
 
-<a
-	{href}
-	rel={isExternal ? 'external' : undefined}
-	target={isExternal ? '_blank' : undefined}
-	class="link"><slot /></a
->
+<a {href} target={isExternal ? '_blank' : undefined} class="link"><slot /></a>
