@@ -4,7 +4,7 @@ description: Hand-selected collection of isms.
 date: 2022-04-23
 ---
 
-### Altruism
+## Altruism
 
 > _Putting others above yourself in a non-deprecating manner._
 
@@ -16,7 +16,7 @@ Often altruistic doctrines are forms of universalism, as in utilitarianism (whic
 
 _Coined by Auguste Comte (1798-1857) from French autrui, descended from Latin alter: other._
 
-### Essentialism
+## Essentialism
 
 > _A lifestyle seeking to exclude unnecessary distractions._
 
@@ -26,7 +26,7 @@ _Coined by Auguste Comte (1798-1857) from French autrui, descended from Latin al
 
 _From English essential, having real existence or related to the intrinsic nature of a thing; derived from Latin essentia: being._
 
-### Intentionalism
+## Intentionalism
 
 > _Examining one's choices to build more mindful habits._
 
@@ -34,6 +34,6 @@ _From English essential, having real existence or related to the intrinsic natur
 
 _From Latin intentionem: mental effort, attention, purpose._
 
-### Sources
+## Sources
 
-[List of isms](https://ismbook.com/ism-list)
+- [List of isms](https://ismbook.com/ism-list)

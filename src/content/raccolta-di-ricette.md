@@ -5,12 +5,10 @@ date: 2022-06-15
 locale: it
 ---
 
-> Come il mio italiano, le mie abilità culinarie sono un «work in progress»
-
 - [Aglio e olio](#aglio-e-olio)
 - [Tofu di lievito nutrizionale](#tofu-di-lievito-nutrizionale)
 
-### Aglio e olio
+## Aglio e olio
 
 Un classico piatto di pasta con solo aglio, olio e un po' di sale. Gnam!
 
@@ -19,7 +17,7 @@ Un classico piatto di pasta con solo aglio, olio e un po' di sale. Gnam!
 - 50 g (1/4 C) di olio d'oliva
 - 1 o 2 spicchi di aglio, tritato
 
-#### Preparazione
+### Preparazione
 
 1. Aggiungete la pasta in una pentola o padella con acqua
 2. Aggiungete una generosa quantità di sale all'acqua
@@ -28,7 +26,7 @@ Un classico piatto di pasta con solo aglio, olio e un po' di sale. Gnam!
 5. Soffriggete l'aglio nell'olio per qualche minuto
 6. Amalgamate il tutto e buon appetito
 
-### Tofu di lievito nutrizionale
+## Tofu di lievito nutrizionale
 
 È _lievito_, non [_leviosà_](https://www.youtube.com/watch?v=Qgr4dcsY-60)!
 
@@ -36,7 +34,7 @@ Un classico piatto di pasta con solo aglio, olio e un po' di sale. Gnam!
 - 30 ml (2 tbsp) di soy sauce
 - 60 ml (4 tbsp) di lievito nutrizionale
 
-#### Preparazione
+### Preparazione
 
 1. Preriscaldate il forno a 220&deg; C (425&deg; F)
 2. Scolate e premete il tofu
