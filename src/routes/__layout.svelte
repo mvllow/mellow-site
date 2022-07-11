@@ -1,5 +1,6 @@
 <script>
 	import Breadcrumbs from '$lib/breadcrumbs.svelte';
+	import WebringSigil from '$lib/webring-sigil.svelte';
 	import '../app.css';
 </script>
 
@@ -50,6 +51,16 @@
 						class="text-sm tracking-wide text-f-med hover:text-f-high"
 						>Writing</a
 					>
+				</li>
+				<li>
+					<a
+						href="https://webring.xxiivv.com/#random"
+						target="_blank"
+						class="text-f-med hover:text-f-high"
+						aria-label="xxiivv webring"
+					>
+						<WebringSigil />
+					</a>
 				</li>
 			</ul>
 		</nav>
