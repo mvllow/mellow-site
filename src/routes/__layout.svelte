@@ -12,9 +12,9 @@
 	<div
 		class="fixed top-0 left-0 z-[var(--layer)] flex h-header-height w-full items-center border-b px-page-gutter before:absolute before:inset-0 before:z-[-1] before:bg-b-low-a before:backdrop-blur-md"
 	>
-		<nav class="mx-auto flex w-full max-w-content items-center">
+		<div class="mx-auto flex w-full max-w-content items-center">
 			<Breadcrumbs />
-		</nav>
+		</div>
 	</div>
 </header>
 
