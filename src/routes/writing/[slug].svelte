@@ -1,16 +1,14 @@
 <script context="module" lang="ts">
 	import type { Load } from './__types/[slug]';
 
-	export const load: Load = async ({ fetch, params }) => {
-		const response = await fetch(`${params.slug}.json`);
-		const post = await response.json();
+	export const load: Load = async ({ props }) => {
 		const crumbs = [
 			{ text: 'Writing', href: '/writing' },
-			{ text: post.metadata.title, href: post.metadata.slug },
+			{ text: props.post.metadata.title, href: props.post.metadata.slug },
 		];
 
 		return {
-			props: { post },
+			props,
 			stuff: { crumbs },
 		};
 	};

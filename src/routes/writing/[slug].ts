@@ -1,8 +1,14 @@
 import { parseMarkdown } from '$lib/markdown';
-import type { RequestHandler } from './__types/[slug].json';
+import type { RequestHandler } from './__types/[slug]';
 
 export const get: RequestHandler = async ({ params }) => {
 	const post = parseMarkdown(`src/content/${params.slug}.md`);
 
-	return post ? { body: post } : { status: 404 };
+	if (!post) {
+		return { status: 404 };
+	}
+
+	return {
+		body: { post },
+	};
 };

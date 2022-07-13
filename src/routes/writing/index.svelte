@@ -1,12 +1,11 @@
 <script context="module" lang="ts">
 	import type { Load } from './__types';
 
-	export const load: Load = async ({ fetch }) => {
-		const response = await fetch(`/writing.json`);
+	export const load: Load = async ({ props }) => {
 		const crumbs = [{ text: 'Writing', href: '/writing' }];
 
 		return {
-			props: { posts: response.ok && (await response.json()) },
+			props,
 			stuff: { crumbs },
 		};
 	};
