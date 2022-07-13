@@ -4,7 +4,10 @@
 	export const load: Load = async ({ props }) => {
 		const crumbs = [
 			{ text: 'Writing', href: '/writing' },
-			{ text: props.post.metadata.title, href: props.post.metadata.slug },
+			{
+				text: props.post.metadata.title,
+				href: `/writing/${props.post.metadata.slug}`,
+			},
 		];
 
 		return {
