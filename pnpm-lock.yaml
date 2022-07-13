@@ -19,7 +19,7 @@ specifiers:
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.60
-  '@sveltejs/kit': 1.0.0-next.371_svelte@3.49.0+vite@2.9.14
+  '@sveltejs/kit': 1.0.0-next.372_svelte@3.49.0+vite@2.9.14
   '@types/marked': 4.0.3
   autoprefixer: 10.4.7_postcss@8.4.14
   marked: 4.0.18
@@ -109,8 +109,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.371_svelte@3.49.0+vite@2.9.14:
-    resolution: {integrity: sha512-2MXNb0M97lsEbJx167YNb6ofGRNuNEBUJM9ntIce6usWaurh+2mMg185sA4p0Kl7gl9xSM2D9GXGT7mlaEmJGA==}
+  /@sveltejs/kit/1.0.0-next.372_svelte@3.49.0+vite@2.9.14:
+    resolution: {integrity: sha512-pcnDfV8YQwj7d/SCaKWT7yPBrmgkPH9Dc4UIeX8yTLXDu8IPzI5kukEOy4xf6LjyJsuSGPy1Ch91ULugtVIdAQ==}
     engines: {node: '>=16.9'}
     hasBin: true
     peerDependencies:

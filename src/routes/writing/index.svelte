@@ -26,6 +26,12 @@
 <svelte:head>
 	<title>Writing</title>
 	<meta name="description" content="A garden of discovery and creation." />
+	<link
+		rel="alternative"
+		type="application/rss+xml"
+		title="RSS"
+		href="/rss.xml"
+	/>
 </svelte:head>
 
 <section>

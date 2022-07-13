@@ -54,6 +54,12 @@
 				</li>
 				<li>
 					<a
+						href="/rss.xml"
+						class="text-sm tracking-wide text-f-med hover:text-f-high">RSS</a
+					>
+				</li>
+				<li>
+					<a
 						href="https://webring.xxiivv.com/#random"
 						target="_blank"
 						class="text-f-med hover:text-f-high"
