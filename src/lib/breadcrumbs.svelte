@@ -15,7 +15,7 @@
 					: ''}"
 			>
 				<a
-					href={selected ? '#' : href}
+					href={selected && href === $page.url.pathname ? '#' : href}
 					aria-label={selected ? 'Return to top of page' : undefined}
 					class="focus:underline focus:outline-none">{text}</a
 				>
