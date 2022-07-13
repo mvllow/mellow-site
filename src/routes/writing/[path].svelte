@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	import type { Load } from './__types/[slug]';
+	import type { Load } from './__types/[path]';
 
 	export const load: Load = async ({ props }) => {
 		const crumbs = [
