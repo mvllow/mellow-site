@@ -40,9 +40,9 @@
 
 <hr />
 
-<div class="space-y-2">
+<div class="space-y-3">
 	{#if post.metadata.locale}
-		<p class="text-f-med">
+		<p>
 			<em
 				>This article was written by a non-native speaker. Feedback is welcome
 				and appreciated.</em
@@ -50,10 +50,12 @@
 		</p>
 	{/if}
 
-	<Link
-		href="https://github.com/mvllow/mellow-site/edit/main/src/content/{post
-			.metadata.slug}.md">Edit this page</Link
-	>
+	<div>
+		<Link
+			href="https://github.com/mvllow/mellow-site/edit/main/src/content/{post
+				.metadata.slug}.md">Suggest changes to this page</Link
+		>
+	</div>
 </div>
 
 <style lang="postcss">
