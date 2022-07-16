@@ -79,10 +79,6 @@ body {
 }
 
 @layer components {
-	.title {
-		@apply text-lg font-semibold tracking-tight sm:text-3xl;
-	}
-
 	.headline {
 		@apply text-base font-semibold tracking-tight sm:text-lg;
 	}

@@ -8,7 +8,7 @@
 </svelte:head>
 
 <section>
-	<h1 class="title">
+	<h1 class="text-lg font-semibold tracking-tight sm:text-3xl">
 		Plant based minimalist. Interested in altruism, essentialism,
 		intentionalism, and probably some other "isms".
 	</h1>
