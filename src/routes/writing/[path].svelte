@@ -30,10 +30,8 @@
 </svelte:head>
 
 <article lang={post.metadata.locale}>
-	<header class="space-y-1">
-		<h1 class="headline">{post.metadata.title}</h1>
-		<p>{post.metadata.description}</p>
-	</header>
+	<h1 class="headline">{post.metadata.title}</h1>
+	<p>{post.metadata.description}</p>
 
 	{@html post.content}
 </article>
