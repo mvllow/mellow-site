@@ -40,8 +40,8 @@
 	<ol>
 		{#each sortedPosts as post}
 			<li>
-				<span class="text-sm tabular-nums text-f-med"
-					>{post.metadata.date}&nbsp;</span
+				<time class="text-sm tabular-nums text-f-med"
+					>{post.metadata.date}&nbsp;</time
 				>
 				<Link href="/writing/{post.metadata.slug}">{post.metadata.title}</Link>
 			</li>
