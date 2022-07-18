@@ -4,7 +4,7 @@ description: A soho inspired, cozy theme featuring a delicately crafted palette 
 date: 2022-05-20
 ---
 
-<img width="640" height="427" src="/images/cultivating-rose-pine/amfora-gemini.gif" alt="Amfora with Rosé Pine theme displaying Project Gemini" />
+<img width="640" height="360" src="/images/cultivating-rose-pine/amfora.gif" alt="Amfora with Rosé Pine theme displaying Project Gemini" />
 
 > _To enjoy the process of writing or the idea of having written_
 
