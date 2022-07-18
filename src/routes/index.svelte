@@ -36,6 +36,9 @@
 
 	<ul>
 		<li>
+			<Link href="/now">Now</Link>
+		</li>
+		<li>
 			<Link href="/writing">Writing</Link>
 		</li>
 	</ul>

@@ -47,6 +47,12 @@
 				</li>
 				<li>
 					<a
+						href="/now"
+						class="text-sm tracking-wide text-f-med hover:text-f-high">Now</a
+					>
+				</li>
+				<li>
+					<a
 						href="/writing"
 						class="text-sm tracking-wide text-f-med hover:text-f-high"
 						>Writing</a
