@@ -88,4 +88,8 @@
 	article :global(blockquote) {
 		@apply border-l-2 border-f-med pl-3 text-f-med;
 	}
+
+	article :global(figure > figcaption) {
+		@apply mt-3.5 text-xs;
+	}
 </style>
