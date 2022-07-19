@@ -1,7 +1,7 @@
 import { parseMarkdown } from '$lib/markdown';
 import type { RequestHandler } from './__types/[path]';
 
-export const get: RequestHandler = async ({ params }) => {
+export const GET: RequestHandler = async ({ params }) => {
 	const post = parseMarkdown(`src/content/${params.path}.md`);
 
 	if (!post) {
