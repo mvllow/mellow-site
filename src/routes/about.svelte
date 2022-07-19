@@ -36,7 +36,9 @@
 		<li>
 			<Link href="https://eldritch.cafe/web/@not">not@eldritch.cafe</Link>
 		</li>
-
+		<li>
+			<Link href="https://literal.club/not">literal.club/not</Link>
+		</li>
 		<li>
 			<Link href="https://github.com/mvllow">github.com/mvllow</Link>
 		</li>
