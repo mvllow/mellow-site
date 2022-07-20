@@ -6,6 +6,7 @@ locale: it
 ---
 
 - [Aglio e olio](#aglio-e-olio)
+- [Caffè con il latte d'avena](#caffè)
 - [Tofu di lievito nutrizionale](#tofu-di-lievito-nutrizionale)
 
 ## Aglio e olio
@@ -25,6 +26,20 @@ Un classico piatto di pasta con solo aglio, olio e un po' di sale. Gnam!
 4. Cuocete per 10-15 minuti oppure appena al dente, poi drenatelo
 5. Soffriggete l'aglio nell'olio per qualche minuto
 6. Amalgamate il tutto e buon appetito
+
+## Caffè
+
+- 20 g i chicchi di caffè
+- 350 ml di acqua
+- un po' di latte d'avena molto crema
+
+### Preparazione
+
+1. Macinate manualmente i chicchi di caffè della tua torrefazione locale
+2. Preparate il caffè in la caffettiera francese con acqua a 95&deg;
+3. Coprite e aspettate quattro minuti
+4. Completate con il latte d'avena
+5. Divertite nella tua tazza preferita
 
 ## Tofu di lievito nutrizionale
 
