@@ -43,7 +43,7 @@ Un classico piatto di pasta con solo aglio, olio e un po' di sale. Gnam!
 
 ## Tofu di lievito nutrizionale
 
-È _lievito_, non [_leviosà_](https://www.youtube.com/watch?v=Qgr4dcsY-60)!
+È _lievito_, non [_leviosà_](https://yewtu.be/watch?v=Qgr4dcsY-60)!
 
 - 360 g (12 oz) di tofu
 - 30 ml (2 tbsp) di soy sauce
