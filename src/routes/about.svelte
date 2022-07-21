@@ -30,14 +30,28 @@
 		>.
 	</p>
 
+	<h2 class="subheadline">Reading</h2>
+
+	<p>
+		I am reading my first book, <Link
+			href="https://literal.club/not/book/rekka-bellum-busy-doing-nothing-r1nc4"
+			>Busy Doing Nothing</Link
+		> by Hundred Rabbits. Happy to receive recommendations for what to read next!
+	</p>
+
+	<ul>
+		<li>
+			<Link href="https://literal.club/not">literal.club/not</Link>
+		</li>
+	</ul>
+
+	<h2 class="subheadline">Connect</h2>
+
 	<p>I would love to exchange thoughts and hear your experiences.</p>
 
 	<ul>
 		<li>
 			<Link href="https://eldritch.cafe/web/@not">not@eldritch.cafe</Link>
-		</li>
-		<li>
-			<Link href="https://literal.club/not">literal.club/not</Link>
 		</li>
 		<li>
 			<Link href="https://github.com/mvllow">github.com/mvllow</Link>
