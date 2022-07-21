@@ -16,7 +16,7 @@
 </svelte:head>
 
 <section>
-	<h1 class="sr-only">mellow journal</h1>
+	<h1 class="sr-only">Journal by mellow</h1>
 	<p class="headline">Now</p>
 
 	<article>
