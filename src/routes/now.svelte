@@ -20,7 +20,7 @@
 	<p class="headline">Now</p>
 
 	<article>
-		<h2>2022-07-16 A tomato</h2>
+		<h2 class="subheadline">2022-07-16 A tomato</h2>
 		<p>
 			I ate a tomato from the ground from a newly found community garden. Pure
 			joy. A simple, natural process that gets swept up by the unnecessary
@@ -29,7 +29,7 @@
 	</article>
 
 	<article>
-		<h2>2022-07-04 Digital garden</h2>
+		<h2 class="subheadline">2022-07-04 Digital garden</h2>
 		<p>
 			Started a personal website redesign with no javascript, small images, and
 			a focus on sustainability and sharing my journey. Embracing functional
@@ -37,14 +37,3 @@
 		</p>
 	</article>
 </section>
-
-<style lang="postcss">
-	article > *,
-	section > * {
-		@apply mt-7;
-	}
-
-	article > h2 {
-		@apply mt-14 text-base font-semibold tracking-tight sm:text-lg;
-	}
-</style>

@@ -7,7 +7,7 @@
 	<meta name="description" content="Plant based minimalist." />
 </svelte:head>
 
-<section>
+<article>
 	<h1 class="text-lg font-semibold tracking-tight sm:text-3xl">
 		Plant based minimalist. Interested in altruism, essentialism,
 		intentionalism, and probably some other "isms".
@@ -23,10 +23,8 @@
 			<Link href="/about">About</Link>
 		</li>
 	</ul>
-</section>
 
-<section>
-	<h2 class="headline">Thoughts &amp; stories</h2>
+	<h2 class="subheadline">Thoughts &amp; stories</h2>
 
 	<p>
 		Follow my journey through a collection of experiences. I write about my
@@ -42,4 +40,4 @@
 			<Link href="/writing">Writing</Link>
 		</li>
 	</ul>
-</section>
+</article>

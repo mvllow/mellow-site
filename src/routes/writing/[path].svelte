@@ -57,18 +57,6 @@
 </div>
 
 <style lang="postcss">
-	article :global(> *) {
-		@apply mt-7;
-	}
-
-	article :global(h2),
-	article :global(h3),
-	article :global(h4),
-	article :global(h5),
-	article :global(h6) {
-		@apply mt-14;
-	}
-
 	article :global(h2) {
 		@apply text-base font-semibold tracking-tight sm:text-lg;
 	}

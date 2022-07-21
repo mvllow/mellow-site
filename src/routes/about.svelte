@@ -19,7 +19,7 @@
 	<meta name="description" content="Question everything." />
 </svelte:head>
 
-<section>
+<article>
 	<h1 class="headline">About</h1>
 
 	<p>
@@ -43,4 +43,4 @@
 			<Link href="https://github.com/mvllow">github.com/mvllow</Link>
 		</li>
 	</ul>
-</section>
+</article>
