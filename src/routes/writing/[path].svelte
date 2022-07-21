@@ -39,7 +39,7 @@
 <hr />
 
 <div class="space-y-3">
-	{#if post.metadata.locale}
+	{#if post.metadata.locale !== 'en'}
 		<p>
 			<em
 				>This article was written by a non-native speaker. Feedback is welcome

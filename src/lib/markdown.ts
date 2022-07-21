@@ -28,7 +28,7 @@ function extractFrontmatter(text: string) {
 			.trim();
 	});
 
-	return { metadata, content };
+	return { metadata: { locale: 'en', ...metadata }, content };
 }
 
 function linkRenderer(href: string, title: string, text: string) {
