@@ -20,6 +20,14 @@
 	<p class="headline">Now</p>
 
 	<article>
+		<h2 class="subheadline">2022-07-20 Altruism</h2>
+		<p>
+			I'm slowly transitioning into working on other's open source projects
+			rather than my own. There's a great joy in helping. Let's create together.
+		</p>
+	</article>
+
+	<article>
 		<h2 class="subheadline">2022-07-16 A tomato</h2>
 		<p>
 			I ate a tomato from the ground from a newly found community garden. Pure
