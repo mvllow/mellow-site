@@ -4,7 +4,9 @@ import type { RequestHandler } from './__types/rss.xml';
 export const GET: RequestHandler = async () => {
 	const feed = {
 		title: 'mellow',
-		link: import.meta.env.DEV ? 'http://localhost:3000' : 'https://mellow.dev',
+		baseUrl: import.meta.env.DEV
+			? 'http://localhost:5173'
+			: 'https://mellow.dev',
 	};
 
 	const posts = parseMarkdownDir('src/content')
@@ -13,9 +15,13 @@ export const GET: RequestHandler = async () => {
 				...post,
 				content: post.content
 					// Replace relative urls with absolute urls
-					.replaceAll('href="#', `href="${feed.link}#`)
-					.replaceAll('href="/', `href="${feed.link}/`)
-					.replaceAll('src="/', `src="${feed.link}/`),
+					.replaceAll(
+						'href="#',
+						`href="${feed.baseUrl}/writing/${post.metadata.slug}#`
+					)
+					.replaceAll('href="/"', `href="${feed.baseUrl}`)
+					.replaceAll('href="/', `href="${feed.baseUrl}/`)
+					.replaceAll('src="/', `src="${feed.baseUrl}/`),
 			};
 		})
 		.sort(
@@ -35,18 +41,21 @@ export const GET: RequestHandler = async () => {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>${feed.title}</title>
-		<link>${feed.link}</link>
-		<atom:link href="${feed.link}/rss.xml" rel="self" type="application/rss+xml" />
+		<link>${feed.baseUrl}</link>
+		<atom:link href="${
+			feed.baseUrl
+		}/rss.xml" rel="self" type="application/rss+xml" />
 		<description>Thoughts and stories about simpler living</description>
 		<image>
-			<url>${feed.link}/favicon.gif</url>
+			<url>${feed.baseUrl}/favicon.gif</url>
 			<title>${feed.title}</title>
-			<link>${feed.link}</link>
+			<link>${feed.baseUrl}</link>
 		</image>
 		${posts
 			.map(
 				(post) => `<item>
 			<title>${post.metadata.title}</title>
+			<link>${feed.baseUrl}/writing/${post.metadata.slug}</link>
 			<guid isPermaLink="false">${post.metadata.slug}</guid>
 			<pubDate>${new Date(post.metadata.date).toUTCString()}</pubDate>
 			<description>
