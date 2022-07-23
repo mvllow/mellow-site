@@ -51,7 +51,7 @@
 
 	<ul>
 		<li>
-			<Link href="https://eldritch.cafe/web/@not">not@eldritch.cafe</Link>
+			<Link href="https://eldritch.cafe/@not">not@eldritch.cafe</Link>
 		</li>
 		<li>
 			<Link href="https://github.com/mvllow">github.com/mvllow</Link>
