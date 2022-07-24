@@ -10,7 +10,7 @@ date: 2022-05-20
 
 ## Grounded aesthetics
 
-After reading [a case against syntax highlighting](https://www.linusakesson.net/programming/syntaxhighlighting/), I was inspired to create a somehow-unique _monochromatic_ colorscheme. After trying several shades of grey, I started to feel tied down. A hopeful search for [earthy colors](https://dribbble.com/search/earthy-colors) brought _something beautiful_ to fruition.
+After reading [a case against syntax highlighting](https://www.linusakesson.net/programming/syntaxhighlighting/), I was inspired to create a somehow-unique _monochromatic_ colourscheme. After trying several shades of grey, I started to feel tied down. A hopeful search for [earthy colours](https://dribbble.com/search/earthy-colours) brought _something beautiful_ to fruition.
 
 ## Naturally growing community
 
