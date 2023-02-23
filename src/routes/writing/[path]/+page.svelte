@@ -1,27 +1,11 @@
-<script context="module" lang="ts">
-	import type { Load } from './__types/[path]';
-
-	export const load: Load = async ({ props }) => {
-		const crumbs = [
-			{ text: 'Writing', href: '/writing' },
-			{
-				text: props.post.metadata.title,
-				href: `/writing/${props.post.metadata.slug}`,
-			},
-		];
-
-		return {
-			props,
-			stuff: { crumbs },
-		};
-	};
-</script>
-
 <script lang="ts">
 	import Link from '$lib/link.svelte';
 	import type { Result as Post } from '$lib/markdown';
+	import type { PageData } from './$types';
 
-	export let post: Post;
+	export let data: PageData;
+
+	export let post = <Post>(data.body?.post || {});
 </script>
 
 <svelte:head>

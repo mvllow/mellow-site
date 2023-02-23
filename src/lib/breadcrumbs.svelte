@@ -1,7 +1,12 @@
 <script>
 	import { page } from '$app/stores';
 
-	$: crumbs = [{ text: 'mellow', href: '/' }, ...($page.stuff.crumbs ?? [])];
+	export let crumbs = [{ text: 'mellow', href: '/' }];
+	page.subscribe(function (d) {
+		if (d?.data?.stuff) {
+			crumbs = [{ text: 'mellow', href: '/' }, ...d.data.stuff.crumbs];
+		}
+	});
 </script>
 
 <nav>

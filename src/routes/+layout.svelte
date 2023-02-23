@@ -68,6 +68,7 @@
 					<a
 						href="https://webring.xxiivv.com/#random"
 						target="_blank"
+						rel="noreferrer noopener"
 						class="text-f-med hover:text-f-high"
 						aria-label="xxiivv webring"
 					>

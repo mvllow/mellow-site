@@ -1,21 +1,10 @@
-<script context="module" lang="ts">
-	import type { Load } from './__types';
-
-	export const load: Load = async ({ props }) => {
-		const crumbs = [{ text: 'Writing', href: '/writing' }];
-
-		return {
-			props,
-			stuff: { crumbs },
-		};
-	};
-</script>
-
 <script lang="ts">
 	import Link from '$lib/link.svelte';
-	import type { Result as Post } from '$lib/markdown';
+	import type { PageData } from './$types';
 
-	export let posts: Post[];
+	export let data: PageData;
+
+	export let posts = data.body?.posts || [];
 
 	const sortedPosts = posts.sort(
 		(a, b) =>

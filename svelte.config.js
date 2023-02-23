@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -7,13 +7,6 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-		browser: {
-			hydrate: false,
-			router: false,
-		},
-		prerender: {
-			default: true,
-		},
 	},
 };
 
