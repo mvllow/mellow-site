@@ -5,7 +5,7 @@
 
 	export let data: PageData;
 
-	export let post = <Post>data.body?.post || {};
+	export let post = <Post>(data.body?.post || {});
 </script>
 
 <svelte:head>
