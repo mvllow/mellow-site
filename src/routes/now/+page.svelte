@@ -1,15 +1,3 @@
-<script context="module" lang="ts">
-	import type { Load } from './__types';
-
-	export const load: Load = async () => {
-		const crumbs = [{ text: 'Now', href: '/now' }];
-
-		return {
-			stuff: { crumbs },
-		};
-	};
-</script>
-
 <svelte:head>
 	<title>Now</title>
 	<meta name="description" content="Ora e dopo." />
