@@ -1,7 +1,7 @@
 import { parseMarkdownDir } from '$lib/markdown';
 import type { RequestHandler } from './$types';
 
-export const prerender = true
+export const prerender = true;
 
 export const GET: RequestHandler = async ({ setHeaders }) => {
 	const feed = {
@@ -67,5 +67,5 @@ export const GET: RequestHandler = async ({ setHeaders }) => {
       </channel>
     </rss>`;
 
-	return new Response(body)
+	return new Response(body);
 };
