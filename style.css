@@ -145,4 +145,15 @@
 	.link:visited {
 		@apply text-f-med;
 	}
+
+	article > table thead > tr {
+		@apply h-8 text-left text-sm font-medium tracking-wide text-f-med;
+	}
+	article > table tbody > tr {
+		@apply h-10 text-md;
+	}
+	article > table td,
+	article > table th {
+		@apply border px-3;
+	}
 }
