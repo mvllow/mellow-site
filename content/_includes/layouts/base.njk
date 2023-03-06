@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.gif" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="{{ description }}" />
+		<link rel="stylesheet" href="/style.css" />
+		<title>{{ title }}</title>
+	</head>
+
+	<body>
+		<header>
+			<div
+				class="fixed top-0 left-0 z-[10] flex h-header-height w-full items-center border-b px-page-gutter before:absolute before:inset-0 before:z-[-1] before:bg-b-low [@supports(backdrop-filter:blur(0))]:before:bg-b-low-a [@supports(backdrop-filter:blur(0))]:before:backdrop-blur-md"
+			>
+				<div class="mx-auto flex w-full max-w-content items-center">
+					{% include "breadcrumbs.njk" %}
+				</div>
+			</div>
+
+			<div
+				aria-hidden="true"
+				class="absolute top-[-1000px] left-0 z-[11] h-[calc(1000px+var(--page-top))] w-full bg-b-low"
+			/>
+		</header>
+
+		<main class="flex justify-center px-page-gutter py-page-top">
+			<div class="min-h-content w-full max-w-content space-y-10 sm:space-y-20">
+				{% include "breadcrumbs.njk" %}
+
+				<article>
+					{{ content | safe }}
+				</article>
+			</div>
+		</main>
+
+		<footer
+			class="flex h-footer-height items-center justify-center border-t px-page-gutter"
+		>
+			<div
+				class="flex w-full max-w-content flex-col-reverse items-center justify-between gap-3 sm:flex-row sm:gap-0"
+			>
+				<p class="text-sm text-f-med">
+					<em>Per favore ama tutti.</em>
+				</p>
+
+				<nav>
+					<ul role="list" class="flex items-center space-x-3 sm:space-x-6">
+						<li>
+							<a
+								href="/about"
+								class="text-sm tracking-wide text-f-med hover:text-f-high">About</a
+							>
+						</li>
+						<li>
+							<a
+								href="/now"
+								class="text-sm tracking-wide text-f-med hover:text-f-high">Now</a
+							>
+						</li>
+						<li>
+							<a
+								href="/writing"
+								class="text-sm tracking-wide text-f-med hover:text-f-high"
+								>Writing</a
+							>
+						</li>
+						<li>
+							<a
+								href="/rss.xml"
+								class="text-sm tracking-wide text-f-med hover:text-f-high">RSS</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://webring.xxiivv.com/#random"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="text-f-med hover:text-f-high"
+								aria-label="xxiivv webring"
+							>
+								<svg
+									width="22"
+									height="22"
+									viewBox="0 0 300 300"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<title>xxiivv webring sigil</title>
+									<path
+										d="M201.962 210C209.919 196.219 212.075 179.841 207.956 164.471C203.837 149.1 193.781 135.994 180 128.038C166.219 120.082 149.841 117.925 134.471 122.044C119.1 126.163 105.994 136.219 98.038 150L48.038 236.603"
+										stroke="currentColor"
+										stroke-width="20"
+										stroke-linecap="square"
+									/>
+									<path
+										d="M98.038 210C101.978 216.824 107.223 222.805 113.474 227.601C119.725 232.398 126.86 235.917 134.471 237.956C142.081 239.995 150.019 240.516 157.831 239.487C165.643 238.459 173.176 235.902 180 231.962C186.824 228.022 192.805 222.777 197.601 216.526C202.398 210.275 205.917 203.14 207.956 195.529C209.995 187.919 210.516 179.981 209.487 172.169C208.459 164.357 205.902 156.824 201.962 150L151.962 63.397"
+										stroke="currentColor"
+										stroke-width="20"
+										stroke-linecap="square"
+									/>
+									<path
+										d="M150 120C134.087 120 118.826 126.321 107.574 137.574C96.3214 148.826 90 164.087 90 180C90 195.913 96.3214 211.174 107.574 222.426C118.826 233.679 134.087 240 150 240H250"
+										stroke="currentColor"
+										stroke-width="20"
+										stroke-linecap="square"
+									/>
+								</svg>
+
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</body>
+</html>

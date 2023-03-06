@@ -1,6 +1,5 @@
 node_modules
-/build
-/.svelte-kit
+/_site
 .env
 .env.*
 !.env.example
