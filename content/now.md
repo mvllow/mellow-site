@@ -5,8 +5,7 @@ description: Ora e dopo.
 crumbs: [{ title: "now", href: "#" }]
 ---
 
-<h1 class="sr-only">Journal by mellow</h1>
-<p class="headline">Now</p>
+# Now
 
 ## 2022-07-20 Altruism
 

@@ -14,23 +14,19 @@
 			100vh - (var(--page-top) * 2) - var(--footer-height)
 		);
 
+		@media (min-width: 640px) {
+			--page-top: 192px;
+			--page-gutter: 48px;
+			--footer-height: 48px;
+		}
+
 		--b-low-a: hsl(32deg 57% 95% / 0.8);
 		--b-low: hsl(32deg 57% 95%);
 		--b-med: hsl(32deg 57% 92%);
 		--f-med: hsl(206deg 23% 31%);
 		--f-high: hsl(206deg 23% 3%);
-	}
 
-	@media (min-width: 640px) {
-		:root {
-			--page-top: 192px;
-			--page-gutter: 48px;
-			--footer-height: 48px;
-		}
-	}
-
-	@media (prefers-color-scheme: dark) {
-		:root {
+		@media (prefers-color-scheme: dark) {
 			--b-low-a: hsl(333deg 5% 9% / 0.9);
 			--b-low: hsl(333deg 5% 9%);
 			--b-med: hsl(333deg 5% 14%);
@@ -41,10 +37,8 @@
 
 	html {
 		@apply scroll-smooth;
-	}
 
-	@media (prefers-reduced-motion: reduce) {
-		html {
+		@media (prefers-reduced-motion: reduce) {
 			@apply scroll-auto;
 		}
 	}
@@ -71,89 +65,99 @@
 
 	ul,
 	ol {
-		@apply space-y-1 leading-relaxed;
+		@apply leading-relaxed;
 	}
 
-	nav ul,
-	nav ol {
-		@apply space-y-0;
+	.content {
+		& > *,
+		article > * {
+			@apply mt-7;
+		}
+
+		ul,
+		ol {
+			@apply space-y-1;
+		}
+
+		& h1 {
+			@apply text-lg font-semibold tracking-tight sm:text-xl;
+		}
+
+		& h2 {
+			@apply text-base font-semibold tracking-tight sm:text-lg;
+		}
+
+		& h3 {
+			@apply font-serif text-base font-medium italic;
+		}
+
+		& h2,
+		& h3,
+		& h4,
+		& h5 {
+			@apply mt-14;
+		}
+
+		& a::before,
+		& a::after {
+			color: var(--f-med);
+		}
+
+		& a::before {
+			content: "{";
+		}
+
+		& a::after {
+			content: "}";
+		}
+
+		& a[target="_blank"]::before {
+			content: "[";
+		}
+
+		& a[target="_blank"]::after {
+			content: "]";
+		}
+
+		& a:hover {
+			@apply underline decoration-f-med underline-offset-2;
+		}
+
+		& a:visited {
+			@apply text-f-med;
+		}
+
+		& table thead > tr > th {
+			@apply h-8 bg-b-med text-left text-sm font-semibold text-f-high;
+		}
+		& table tbody > tr {
+			@apply h-10 text-md;
+		}
+		& table td,
+		& table th {
+			@apply border border-f-med px-3;
+		}
+
+		& blockquote {
+			@apply border-l-2 border-f-med pl-3 text-f-med;
+		}
+
+		& figure > figcaption {
+			@apply mt-3.5 text-xs;
+		}
 	}
 
-	article > *,
-	section > * {
-		@apply mt-7;
-	}
+	article {
+		& h1 {
+			@apply text-lg font-semibold tracking-tight;
+		}
 
-	article > h2,
-	article > h3,
-	article > h4,
-	article > h5,
-	article > h6,
-	section > h2,
-	section > h3,
-	section > h4,
-	section > h5,
-	section > h6 {
-		@apply mt-14;
-	}
-}
+		& ul {
+			@apply list-disc pl-[18px];
+		}
 
-@layer components {
-	article h1,
-	.headline {
-		@apply text-lg font-semibold tracking-tight;
-	}
-
-	article h2,
-	.subheadline {
-		@apply text-base font-semibold tracking-tight;
-	}
-
-	article a::before,
-	article a::after,
-	.link::before,
-	.link::after {
-		color: var(--f-med);
-	}
-
-	article a::before,
-	.link::before {
-		content: "{";
-	}
-
-	article a::after,
-	.link::after {
-		content: "}";
-	}
-
-	article a[target="_blank"]::before,
-	.link[target="_blank"]::before {
-		content: "[";
-	}
-
-	article a[target="_blank"]::after,
-	.link[target="_blank"]::after {
-		content: "]";
-	}
-
-	article a:hover,
-	.link:hover {
-		@apply underline decoration-f-med underline-offset-2;
-	}
-
-	article a:visited,
-	.link:visited {
-		@apply text-f-med;
-	}
-
-	article > table thead > tr {
-		@apply h-8 text-left text-sm font-medium tracking-wide text-f-med;
-	}
-	article > table tbody > tr {
-		@apply h-10 text-md;
-	}
-	article > table td,
-	article > table th {
-		@apply border px-3;
+		& ol {
+			@apply list-decimal pl-[18px];
+		}
 	}
 }

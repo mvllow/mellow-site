@@ -27,13 +27,15 @@
 			/>
 		</header>
 
-		<main class="flex justify-center px-page-gutter py-page-top">
-			<div class="min-h-content w-full max-w-content space-y-10 sm:space-y-20">
-				{% include "breadcrumbs.njk" %}
+		<main id="content" class="flex justify-center px-page-gutter py-page-top">
+			<div class="min-h-content w-full max-w-content">
+				<div aria-hidden="true">
+					{% include "breadcrumbs.njk" %}
+				</div>
 
-				<article>
+				<div class="content mt-10 sm:mt-20">
 					{{ content | safe }}
-				</article>
+				</div>
 			</div>
 		</main>
 

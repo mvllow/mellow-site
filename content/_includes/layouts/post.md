@@ -3,12 +3,15 @@ layout: layouts/base.njk
 locale: en
 ---
 
+<article>
+
 # {{ title }}
 
 {{ description }}
 
 {{ content | safe }}
 
+</article>
 
 ---
 

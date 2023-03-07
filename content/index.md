@@ -4,7 +4,7 @@ title: mellow
 description: Plant based minimalist.
 ---
 
-<h1 class="text-lg font-semibold tracking-tight sm:text-3xl">
+<h1 class="sm:!text-3xl">
     Plant based minimalist. Interested in altruism, essentialism,
     intentionalism, and probably some other "isms".
 </h1>

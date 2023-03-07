@@ -3,10 +3,10 @@
 	"private": true,
 	"scripts": {
 		"clean": "del-cli _site",
-		"dev:css": "npx tailwindcss -i style.css -o _site/style.css -w",
+		"dev:css": "npx postcss style.css -o _site/style.css -w",
 		"dev:11ty": "npx @11ty/eleventy --serve",
 		"dev": "run-p dev:*",
-		"build:css": "NODE_ENV=production npx tailwindcss -i style.css -o _site/style.css -m",
+		"build:css": "NODE_ENV=production npx postcss style.css -o _site/style.css -m",
 		"build:11ty": "npx @11ty/eleventy",
 		"build": "npm run clean && run-s build:*"
 	},
@@ -26,6 +26,7 @@
 		"markdown-it-link-attributes": "^4.0.1",
 		"npm-run-all": "^4.1.5",
 		"postcss": "^8.4.21",
+		"postcss-cli": "^10.1.0",
 		"prettier": "^2.8.4",
 		"prettier-plugin-tailwindcss": "^0.2.4",
 		"tailwindcss": "^3.2.7"
