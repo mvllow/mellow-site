@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Writing
-description: TODO
+description: A garden of discovery and creation.
 crumbs: [{ title: "writing", href: "#" }]
 eleventyImport:
   collections: ["posts"]
