@@ -23,6 +23,9 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
 	});
 
+	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg}");
+	eleventyConfig.addWatchTarget("style.css");
+
 	eleventyConfig.amendLibrary("md", (mdLib) =>
 		mdLib.use(markdownItLinkAttributes, {
 			matcher(href, config) {
