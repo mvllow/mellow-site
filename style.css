@@ -80,11 +80,11 @@
 		}
 
 		& h1 {
-			@apply text-lg font-semibold tracking-tight sm:text-xl;
+			@apply text-lg font-semibold tracking-tight;
 		}
 
 		& h2 {
-			@apply text-base font-semibold tracking-tight sm:text-lg;
+			@apply text-base font-semibold tracking-tight;
 		}
 
 		& h3 {
@@ -128,7 +128,7 @@
 		}
 
 		& table thead > tr > th {
-			@apply h-8 bg-b-med text-left text-sm font-semibold text-f-high;
+			@apply h-8 bg-b-med text-sm font-semibold text-f-high;
 		}
 		& table tbody > tr {
 			@apply h-10 text-md;
@@ -148,10 +148,6 @@
 	}
 
 	article {
-		& h1 {
-			@apply text-lg font-semibold tracking-tight;
-		}
-
 		& ul {
 			@apply list-disc pl-[18px];
 		}
