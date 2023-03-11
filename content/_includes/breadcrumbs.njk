@@ -1,0 +1,23 @@
+<nav>
+	<ol role="list" class="flex items-center">
+		{% if crumbs.length > 0 %}
+			<li class="text-md lowercase after:text-f-med after:mx-[1ch] after:content-['/']"><a href="/" class="focus:underline focus:outline-none">mellow</a></li>
+		{% else %}
+			<li class="text-md lowercase after:text-f-med"><a href="#" class="focus:underline focus:outline-none font-serif italic">mellow</a></li>
+		{% endif %}
+
+		{% for crumb in crumbs %}
+			{% if crumbs.length > 0 %}
+				<li class="text-md lowercase after:text-f-med last:truncate [&:not(:last-child)]:after:mx-[1ch] [&:not(:last-child)]:after:content-['/']">
+					{% if loop.index == crumbs.length %}
+						<a href="#" aria-label="Return to top of page" class="focus:underline focus:outline-none font-serif italic">{{ crumb.title }}</a>
+					{% else %}
+						<a href="{{ crumb.href }}" class="focus:underline focus:outline-none">{{ crumb.title }}</a>
+					{% endif %}
+				</li>
+			{% endif %}
+		{% else %}
+			<!-- Fallback -->
+		{% endfor %}
+	</ol>
+</nav>
