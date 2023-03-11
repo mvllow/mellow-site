@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginDrafts = require("./eleventy.config.drafts.js");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const markdownItLinkAttributes = require("markdown-it-link-attributes");
 
@@ -9,6 +10,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(pluginDrafts);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
