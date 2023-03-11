@@ -12,30 +12,29 @@
 	</head>
 
 	<body>
-		<header>
+		<div
+			aria-hidden="true"
+			class="w-full absolute top-0 h-page-top bg-b-low z-20"
+		></div>
+
+		<div
+			aria-hidden="true"
+			class="fixed top-[-1000px] left-0 z-10 h-[calc(1000px+var(--header-height)+1px)] w-full border-b"
+		></div>
+
+		<header class="mt-page-top sticky top-0 z-20 h-header-height">
 			<div
-				class="fixed top-0 left-0 z-[10] flex h-header-height w-full items-center border-b px-page-gutter before:absolute before:inset-0 before:z-[-1] before:bg-b-low [@supports(backdrop-filter:blur(0))]:before:bg-b-low-a [@supports(backdrop-filter:blur(0))]:before:backdrop-blur-md"
+				class="flex h-header-height w-full items-center px-page-gutter before:absolute before:inset-0 before:z-[-1] before:bg-b-low [@supports(backdrop-filter:blur(0))]:before:bg-b-low-a [@supports(backdrop-filter:blur(0))]:before:backdrop-blur-md"
 			>
 				<div class="mx-auto flex w-full max-w-content items-center">
 					{% include "breadcrumbs.njk" %}
 				</div>
 			</div>
-
-			<div
-				aria-hidden="true"
-				class="absolute top-[-1000px] left-0 z-[11] h-[calc(1000px+var(--page-top))] w-full bg-b-low"
-			/>
 		</header>
 
-		<main id="content" class="flex justify-center px-page-gutter py-page-top">
-			<div class="min-h-content w-full max-w-content">
-				<div aria-hidden="true">
-					{% include "breadcrumbs.njk" %}
-				</div>
-
-				<div class="content mt-10 sm:mt-20">
-					{{ content | safe }}
-				</div>
+		<main id="content" class="flex justify-center px-page-gutter pb-page-top">
+			<div class="min-h-content w-full max-w-content content mt-10">
+				{{ content | safe }}
 			</div>
 		</main>
 
