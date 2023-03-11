@@ -1,6 +1,5 @@
 ---
 layout: layouts/base.njk
-locale: en
 ---
 
 <article>
@@ -22,4 +21,3 @@ _Questo articolo è stato scritto da un non madrelingua. Il feedback è benvenut
 {% else %}
 [Suggest changes to this page](https://github.com/mvllow/mellow-site/edit/main/{{page.inputPath}})
 {% endif %}
-
