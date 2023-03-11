@@ -16,7 +16,10 @@ locale: en
 ---
 
 {% if locale != "en" %}
-_This article was written by a non-native speaker. Feedback is welcome and appreciated._
+_Questo articolo è stato scritto da un non madrelingua. Il feedback è benvenuto e apprezzato._
+
+[Suggerisci modifiche a questa pagina](https://github.com/mvllow/mellow-site/edit/main/{{page.inputPath}})
+{% else %}
+[Suggest changes to this page](https://github.com/mvllow/mellow-site/edit/main/{{page.inputPath}})
 {% endif %}
 
-[Suggest changes to this page](https://github.com/mvllow/mellow-site/edit/main/{{page.inputPath}})
