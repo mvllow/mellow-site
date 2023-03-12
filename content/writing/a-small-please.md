@@ -2,7 +2,6 @@
 title: A small, please
 description: The personal and global pressure to want more.
 date: 2023-02-23
-draft: true
 ---
 
 My favourite drink is a dry cappuccino. I'm not quite sure what the "dry" part
