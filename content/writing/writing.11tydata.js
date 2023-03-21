@@ -4,7 +4,7 @@ module.exports = {
 	eleventyComputed: {
 		crumbs: (data) => [
 			{ title: "writing", href: "/writing" },
-			{ title: data.title, href: "{{ url }}" },
+			{ title: data.title, href: "#" },
 		],
 	},
 };

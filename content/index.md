@@ -1,5 +1,4 @@
 ---
-layout: layouts/base.njk
 title: mellow
 description: Plant based minimalist.
 ---
@@ -9,7 +8,8 @@ description: Plant based minimalist.
     intentionalism, and probably some other "isms".
 </h1>
 
-Welcome to my digital garden. Take what you need, as we will continue to grow&nbsp;♥
+Welcome to my digital garden. Take what you need, as we will continue to
+grow&nbsp;♥
 
 - [About](/about)
 

@@ -1,8 +1,6 @@
 ---
-layout: layouts/base.njk
 title: Now
 description: Ora e dopo.
-crumbs: [{ title: "now", href: "#" }]
 ---
 
 # Now

@@ -1,8 +1,6 @@
 ---
-layout: layouts/base.njk
 title: About
 description: Question everything.
-crumbs: [{ title: "about", href: "#" }]
 ---
 
 # About
