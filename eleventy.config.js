@@ -5,6 +5,9 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const markdownItLinkAttributes = require("markdown-it-link-attributes");
 
 module.exports = function (eleventyConfig) {
+	eleventyConfig.addWatchTarget("./tailwind.config.js");
+	eleventyConfig.addWatchTarget("./style.css");
+
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
 	});
