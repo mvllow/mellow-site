@@ -21,3 +21,4 @@ self-sustaining and anything else that piques my interest.
 
 - [Now](/now)
 - [Writing](/writing)
+- [Projects](/projects)
