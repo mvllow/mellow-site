@@ -1,10 +1,10 @@
-const { DateTime } = require("luxon");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginDrafts = require("./eleventy.config.drafts.js");
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-const markdownItLinkAttributes = require("markdown-it-link-attributes");
+import { DateTime } from "luxon";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginDrafts from "./eleventy.config.drafts.js";
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+import markdownItLinkAttributes from "markdown-it-link-attributes";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 	eleventyConfig.addWatchTarget("./tailwind.config.js");
 	eleventyConfig.addWatchTarget("./style.css");
 
@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
-			format || "yyyy-LL-dd"
+			format || "yyyy-LL-dd",
 		);
 	});
 
@@ -40,7 +40,7 @@ module.exports = function (eleventyConfig) {
 				target: "_blank",
 				rel: "noopener noreferrer",
 			},
-		})
+		}),
 	);
 
 	eleventyConfig.setLayoutResolution(false);
@@ -55,4 +55,4 @@ module.exports = function (eleventyConfig) {
 			output: "_site",
 		},
 	};
-};
+}

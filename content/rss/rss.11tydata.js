@@ -1,4 +1,2 @@
-module.exports = {
-	layout: "",
-	eleventyExcludeFromCollections: true,
-};
+export const layout = "";
+export const eleventyExcludeFromCollections = true;

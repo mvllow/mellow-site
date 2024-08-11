@@ -24,18 +24,20 @@ function eleventyComputedExcludeFromCollections() {
 	};
 }
 
-module.exports.eleventyComputedPermalink = eleventyComputedPermalink;
-module.exports.eleventyComputedExcludeFromCollections =
+const _eleventyComputedPermalink = eleventyComputedPermalink;
+export { _eleventyComputedPermalink as eleventyComputedPermalink };
+const _eleventyComputedExcludeFromCollections =
 	eleventyComputedExcludeFromCollections;
+export { _eleventyComputedExcludeFromCollections as eleventyComputedExcludeFromCollections };
 
-module.exports = (eleventyConfig) => {
+export default (eleventyConfig) => {
 	eleventyConfig.addGlobalData(
 		"eleventyComputed.permalink",
-		eleventyComputedPermalink
+		eleventyComputedPermalink,
 	);
 	eleventyConfig.addGlobalData(
 		"eleventyComputed.eleventyExcludeFromCollections",
-		eleventyComputedExcludeFromCollections
+		eleventyComputedExcludeFromCollections,
 	);
 
 	let logged = false;
