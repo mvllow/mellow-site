@@ -145,6 +145,10 @@
 		& figure > figcaption {
 			@apply mt-3.5 text-xs;
 		}
+
+		& pre {
+			@apply overflow-x-auto border bg-b-med p-3 text-sm;
+		}
 	}
 
 	article {
