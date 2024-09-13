@@ -111,11 +111,11 @@
 			content: "}";
 		}
 
-		& a[target="_blank"]::before {
+		& a[href^="http"]::before {
 			content: "[";
 		}
 
-		& a[target="_blank"]::after {
+		& a[href^="http"]::after {
 			content: "]";
 		}
 
