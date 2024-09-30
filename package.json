@@ -3,7 +3,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"clean": "del-cli _site",
+		"clean": "npx del-cli _site",
 		"dev:css": "npx postcss style.css -o _site/style.css -w",
 		"dev:11ty": "npx @11ty/eleventy --serve",
 		"dev": "run-p dev:*",
@@ -24,7 +24,6 @@
 		"cssnano": "^7.0.5",
 		"del-cli": "^5.1.0",
 		"luxon": "^3.5.0",
-		"markdown-it-link-attributes": "^4.0.1",
 		"npm-run-all": "^4.1.5",
 		"postcss": "^8.4.41",
 		"postcss-cli": "^11.0.0",
