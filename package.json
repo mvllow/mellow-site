@@ -3,13 +3,8 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"clean": "npx del-cli _site",
-		"dev:css": "npx postcss style.css -o _site/style.css -w",
-		"dev:11ty": "npx @11ty/eleventy --serve",
-		"dev": "run-p dev:*",
-		"build:css": "NODE_ENV=production npx postcss style.css -o _site/style.css -m",
-		"build:11ty": "npx @11ty/eleventy",
-		"build": "npm run clean && run-s build:*"
+		"dev": "npx postcss style.css -o _site/style.css -w & npx @11ty/eleventy --serve",
+		"build": "NODE_ENV=production npx del-cli _site && npx postcss style.css -o _site/style.css -m && npx @11ty/eleventy"
 	},
 	"prettier": {
 		"useTabs": true,
@@ -24,7 +19,6 @@
 		"cssnano": "^7.0.5",
 		"del-cli": "^5.1.0",
 		"luxon": "^3.5.0",
-		"npm-run-all": "^4.1.5",
 		"postcss": "^8.4.41",
 		"postcss-cli": "^11.0.0",
 		"prettier": "^3.3.3",
