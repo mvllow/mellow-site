@@ -19,5 +19,6 @@ I am reading my first book, [Busy Doing Nothing](https://literal.club/not/book/r
 
 I would love to exchange thoughts and hear your experiences.
 
-- [not@eldritch.cafe](https://eldritch.cafe/@not)
+- [ciao@mellow.dev](mailto:ciao@mellow.dev)
+- [eldritch.cafe/@not](https://eldritch.cafe/@not)
 - [github.com/mvllow](https://github.com/mvllow)
